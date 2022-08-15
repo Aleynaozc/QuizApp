@@ -1,0 +1,431 @@
+:root {
+
+    --corner: 20px;
+}
+/* KEY FRAMES */
+@keyframes buttonAnimation {
+    0% {
+      top: 0%;
+      position: relative;
+    }
+   
+   100% {
+      top: 130%;
+      position: relative;
+      opacity: 0.2;
+    }
+  }
+@keyframes openModal {
+    from {
+      height: 0;
+    }
+  
+    to {
+      height: 84%;
+    }
+  }
+  @keyframes closeModal {
+    0% {
+      width: 30%;
+    }
+  
+    100% {
+      width: 0%;
+      
+    }
+  }
+  .closeModal-animation{
+    animation-duration: 0.7s;
+    animation-name: closeModal;
+  }
+.height-animation{
+    animation-duration: 1s;
+    animation-name: openModal;
+}
+.button-animation{
+    animation: buttonAnimation 0.7s ease-in-out;
+}
+
+body {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container {
+    padding-left: 0px;
+    width: 375px;
+    height: 712px;
+    border-radius: var(--corner);
+    box-shadow: 5px 5px 15px black;
+    background-color: #f7f7f7;
+     /* background-image: url(assets/images/indir\ \(4\).jpg);  */
+}
+            /*HEADER*/
+.header {
+    position: relative;
+    width: inherit;
+    height: 190px;
+    width: 375px;
+    margin-right: 120px;
+    border-radius: var(--corner);
+     /* background-color:  #e0dddb;  */
+     background-image: url(assets/images/highlight.jpg); 
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+}
+
+.header__icon {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.header__icon__pos {
+    position: relative;
+    float: right;
+    left: 130px;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+
+}
+
+.fa-heart {
+    border: 1px solid #868d82;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 4px;
+    color: #868d82;
+
+}
+
+.fa-heart:hover {
+    color: #8f4b92;
+    border: 1px solid #9733b3;
+}
+
+.fa-user {
+    margin-right: 20px;
+    border: 1px solid #868d82;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 4px;
+    cursor: pointer;
+    color: #868d82;
+}
+
+.fa-user:hover {
+    color: #2b4e6b;
+    border: 1px solid #29577d;
+}
+
+.header__title {
+    height: inherit;
+    margin-left: 20px;
+}
+
+.header__main__title {
+    font-size: 20px;
+    color: #4d6342;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header__subtitle {
+    color: #90908f;
+}
+              /*QUESTION BUTTONS*/
+.quiz__categories {
+    margin-top: 40px;
+    width: 375px;
+    display: block;
+    position: relative;
+
+}
+
+.quiz__categories__buttons {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.open__questions__button {
+    background-color: #ece6e4;
+    height: 120px;
+    width: 340px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(248, 248, 248, 0.226) 0px 50px 100px -20px, rgba(255, 255, 255, 0.505) 0px 30px 60px -30px,#dcc8c2 0px -2px 6px 0px inset;
+}
+
+.quiz__title {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.title__level {
+    font-weight: 600;
+    color: #c8bbac;
+}
+
+.quiz__categories__name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #a38058;
+}
+
+.quiz__categories__name:hover {
+    color:#b18770 ;
+}
+
+.react__categories {
+    position: absolute;
+    bottom: 70px;
+    margin-left: 220px;
+    width: 120px;
+    height: 90px;
+}
+
+.html__categories {
+    position: absolute;
+    bottom: 70px;
+    margin-left: 245px;
+    width: 80px;
+    height: 80px;
+}
+
+.css__categories {
+    position: absolute;
+    bottom: 70px;
+    margin-left: 250px;
+    width: 70px;
+    height: 75px;
+}
+
+.go__page {
+    text-decoration: none;
+    color: black;
+    animation-duration: 1s;
+    animation-name: openModal;
+}
+
+.go__page:hover {
+    color: black;
+}
+.modals{
+    
+    width: inherit;
+    height: inherit;
+    z-index: 999;
+    top: 30px;
+    
+}
+
+/*CHOOSE SİGNIN OR SIGNUP MODAL*/
+.signIn_signUp-modal{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: 999;
+    top: 30px;
+    /* background-image: url(assets/images/Fabien\ Sarazin\ _\ ÔPOS.jpg); */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #eae4e2aa;
+   
+}
+
+
+
+.signIn_signUp-modal.show {
+    display: flex;
+}
+.signIn_signUp-modal-body{
+    width: 300px;
+    height: 300px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.signIn_signUp-form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+   
+}
+.signIn_signUp-button{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    color: #fcfcfc;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#signUp{
+    background-color: #885da7;
+ 
+    
+}
+#signIn{
+
+    background-color: #9ea38e;
+    
+}
+/*SIGN Up MODAL*/
+.signUp_modal {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: 999;
+    top: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    animation-duration: 0.6s;
+    animation-name: openModal;
+}
+
+.signUp_modal.show {
+    display: flex;
+}
+
+.signUp__modal-body {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    background-color: #83759ac8;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color:white;
+}
+
+.signUp__form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 250px;
+
+}
+.signUp__name-title{
+    margin-top: 10px;
+    float: left;
+}
+
+.signUp-button{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #885da7;
+    border-radius: 4px;
+    color: #fcfcfc;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*SIGN IN MODAL*/
+
+.signIn_modal {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: 999;
+    top: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    animation-duration: 0.6s;
+    animation-name: openModal;
+}
+
+.signIn_modal.show {
+    display: flex;
+}
+
+.signIn__modal-body {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    background-color: #bbc1aa;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+}
+
+.signIn__form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 250px;
+
+}
+.signIn__name-title{
+    margin-top: 10px;
+    float: left;
+}
+.user__name {
+    margin-top: 10px;
+    width: inherit;
+    border-radius: 8px;
+    border:none;    
+    background-color: #f9f9f9;
+}
+.signIn-button{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #9ea38e;
+    border-radius: 4px;
+    color: #fcfcfc;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input::placeholder{
+    color:#61370176;   
+}
+
+.fa-arrow-left{
+    border-radius: 14px;
+    padding:5px 7px 7px 5px;
+    left:30px;
+    width: 30px;
+    display: none;
+    bottom:600px;
+    z-index: 9999;
+    position: relative;
+    font-size: 20px;
+    background-color: #fdfdfd31;
+    cursor:pointer;
+    color:#4a4a4b;
+}
+.fa-arrow-left:hover{
+    background-color: #fdfdfd5e;
+    border-radius: 14px;
+    color:#323233;
+}
+.fa-arrow-left.show{
+    display: block;
+}

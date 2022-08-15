@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http__equiv="X__UA__Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome-v6.1.1/css/all.css" />
+    <link rel="stylesheet" href="./mainpage.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <section class="container" action="mainpage.html">
+        <div>
+        <div class="header">
+            <div class="header__icon">
+                <div class="header__icon__pos">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-user" id="userIcon" ></i>
+            </div>
+            </div>
+            <div class="header__title">
+            <p class="header__main__title">Let's Play</p>
+            <small class="header__subtitle">Be the First!</small>
+        </div>
+       
+        </div>
+        <div class="quiz__categories">
+            <img src="/assets/images/react.png"  class="react__categories" alt="react">
+            <a href="reactquestionpage.html" class="go__page">
+            <div class="quiz__categories__buttons">
+                <div class="open__questions__button">
+                    <div class="quiz__title">
+                 <small class="title__level">Level 1</small>
+                 <p class="quiz__categories__name">React</p>
+                </div>
+            </div>
+            </div>
+        </a>
+        </div>
+            <div class="quiz__categories">
+                <img src="/assets/images/html5.png"  class="html__categories" alt="html5">
+                <a href="htmlquestionpage.html" class="go__page">
+                <div class="quiz__categories__buttons">
+                <div class="open__questions__button">
+                    <div class="quiz__title">
+                 <small class="title__level">Level 1</small>
+                 <p class="quiz__categories__name">HTML 5</p>
+                </div>
+            </div>
+            </div>
+        </a>
+        </div>
+        <div class="quiz__categories">
+            <img src="/assets/images/css3.png"  class="css__categories" alt="css3">
+            <a href="questionpage.html" class="go__page">
+            <div class="quiz__categories__buttons">
+                <div  class="open__questions__button">
+                <div class="quiz__title">
+                 <small class="title__level">Level 1</small>
+                 <p class="quiz__categories__name">CSS 3</p>
+                </div>
+            </div>
+            </div>
+        </a>
+        </div>
+        </div>
+                        <!-- MODALS-->
+        <div class="modals">
+            <i class="fa-solid fa-arrow-left" id="backPage" ></i>
+        <div class="signIn_signUp-modal" id="signInSignUpModal">
+            <div class="signIn_signUp-modal-body">
+               <form class="signIn_signUp-form">
+                   <div id="signinbutton">
+                   <button type="button" class="signIn_signUp-button" id="signIn">Sign In</button>
+                </div>
+                <div id="signupbutton">
+                   <button type="button" class="signIn_signUp-button" id="signUp">Sign Up</button>
+                </div>
+                </form>
+             </div>
+         </div>
+          <!--SIGN UP MODAL-->
+         <div class="signUp_modal" id="signUpModal">
+            <div class="signUp__modal-body">
+               <form class="signUp__form">
+                   <small class="signUp__name-title" >User name</small>
+                   <input type="text" class="user__name" placeholder="User Name"  autocomplete="off">
+                   <small class="signUp__name-title" >Email</small>
+                   <input type="email" class="user__name" placeholder="Email"   autocomplete="off">
+                   <small class="signUp__name-title">Password</small>
+                   <input type="password" class="user__name" placeholder="Password"   autocomplete="off">
+                   <button type="submit" class="signUp-button">Sign Up</button>
+                </form>
+             </div>
+         </div>
+            <!--SIGN IN MODAL-->
+         <div class="signIn_modal" id="signInModal">
+            <div class="signIn__modal-body">
+               <form class="signIn__form">
+                   <small class="signIn__name-title" >User name</small>
+                   <input type="text" class="user__name" placeholder="User Name"  autocomplete="off">
+                   <small class="signIn__name-title">Password</small>
+                   <input type="password" class="user__name" placeholder="Password"   autocomplete="off">
+                   <button type="submit" class="signIn-button">Sign In</button>
+                </form>
+             </div>
+         </div>
+        </div>
+      
+  
+    </section>
+    <script src="mainpage.js"></script>
+    
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

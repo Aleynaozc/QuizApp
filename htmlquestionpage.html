@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome-v6.1.1/css/all.css" />
+
+    <link rel="stylesheet" href="./questionpage.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="question__page__header">
+            <div class="icons__area__container">
+                <i class="fa-solid fa-xmark" id="closePage" onclick="closeQuestionPage()"></i>
+                <i class="timer" id="timer" ></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <!--SORU SAYISI-->
+        <div class="question__number">
+            <h5 id="quizOrder"></h5>
+        </div>
+        <!--SORULAr-->
+        <div id="questionContainer"></div>
+        <button class="next__question__button" onclick="nextQuestion()">
+            <span class="next__title">Next</span>
+        </button>
+        <div class="quiz__modal" >
+           <div class="quiz__modal-body">
+              <form>
+                  <input type="text" class="user-name" aria-label="username">
+              </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="questionHTML.js"></script>
+   
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+{
+   "CSS3":[
+   {
+      "id": 1,
+      "text": "What is the default value for box-sizing in CSS?",
+      "answers": [
+         {
+            "id": 1,
+            "text": "border-box",
+            "isCorrect": false
+         },
+         {
+            "id": 2,
+            "text": "content-box",
+            "isCorrect": true
+         },
+         {
+            "id": 3,
+            "text": "inherit",
+            "isCorrect": false
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "text": "Which property is used to change the background color?",
+      "answers": [
+         {
+            "id": 1,
+            "text": "background-color",
+            "isCorrect": true
+         },
+         {
+            "id": 2,
+            "text": "bg-color",
+            "isCorrect": false
+         },
+         {
+            "id": 3,
+            "text": "color",
+            "isCorrect": false
+         }
+      ]
+   },
+   {
+      "id": 3,
+      "text": "Which CSS Property sets the stacking order of positioned elements?",
+      "answers": [
+         {
+            "id": 1,
+            "text": "z-index",
+            "isCorrect": true
+         },
+         {
+            "id": 2,
+            "text": "y-index",
+            "isCorrect": false
+         },
+         {
+            "id": 3,
+            "text": "x-index",
+            "isCorrect": false
+         }
+      ]
+   },
+   {
+      "id": 4,
+      "text": "How do you select an element with id 'demo'?",
+      "answers": [
+         {
+            "id": 1,
+            "text": "*demo",
+            "isCorrect": false
+         },
+         {
+            "id": 2,
+            "text": "#demo",
+            "isCorrect": true
+         },
+         {
+            "id": 3,
+            "text": ".demo",
+            "isCorrect": false
+         }
+      ]
+   },
+   {
+      "id": 5,
+      "text": "CSS stands for ______",
+      "answers": [
+         {
+            "id": 1,
+            "text": "Color Style Sheets",
+            "isCorrect": false
+         },
+         {
+            "id": 2,
+            "text": "Cascading Style Sheets",
+            "isCorrect": true
+         },
+         {
+            "id": 3,
+            "text": "Cascade Sheets Style",
+            "isCorrect": false
+         }
+      ]
+   }
+  ],
+  "REACT":[
+ {
+      "id": 1,
+      "text": "What is the correct command to create a new React project?",
+      "answers": [
+         {
+            "id": 1,
+            "text": " npm create-react-app myReactApp",
+            "isCorrect": false
+         },
+         {
+            "id": 2,
+            "text": " npx create-react-app myReactApp",
+            "isCorrect": true
+         },
+         {
+            "id": 3,
+            "text": " npx create-react-app",
+            "isCorrect": false
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "text": "What command is used to start the React local development server?",
+      "answers": [
+         {
+            "id": 1,
+            "text": " npm run dev",
+            "isCorrect": false
+         },
+         {
+            "id": 2,
+            "text": " npm build",
+            "isCorrect": false
+         },
+         {
+            "id": 3,
+            "text": " npm start",
+            "isCorrect": true
+         }
+      ]
+   },
+   {
+      "id": 3,
+      "text": "What props will be available to the following component? <Car {...props} />",
+      "answers": [
+         {
+            "id": 1,
+            "text": "all of them",
+            "isCorrect": true
+         },
+         {
+            "id": 2,
+            "text": "only updated ones",
+            "isCorrect": false
+         },
+         {
+            "id": 3,
+            "text": "children",
+            "isCorrect": false
+         }
+      ]
+   },
+   {
+      "id": 4,
+      "text": " Which function is used to change the state of react component? ",
+      "answers": [
+         {
+            "id": 1,
+            "text": "this.State{}",
+            "isCorrect": false
+         },
+         {
+            "id": 2,
+            "text": " this.setState",
+            "isCorrect": true
+         },
+         {
+            "id": 3,
+            "text": "None of the Above",
+            "isCorrect": false
+         }
+      ]
+   },
+   {
+      "id": 5,
+      "text": "Props are __________ into other components",
+      "answers": [
+         {
+            "id": 1,
+            "text": "Methods",
+            "isCorrect": true
+         },
+         {
+            "id": 2,
+            "text": "Injected",
+            "isCorrect": false
+         },
+         {
+            "id": 3,
+            "text": "All of them",
+            "isCorrect": false
+         }
+      ]
+   },
+   {
+      "id": 6,
+      "text": "What are two ways data gets handled in react?",
+      "answers": [
+         {
+            "id": 1,
+            "text": "state & component",
+            "isCorrect": false
+         },
+         {
+            "id": 2,
+            "text": " services & components",
+            "isCorrect": false
+         },
+         {
+            "id": 3,
+            "text": " state & props",
+            "isCorrect": true
+         }
+      ]
+   }
+  ],
+  "HTML5":[
+   {
+        "id": 1,
+        "text": "Choose the correct HTML element for the largest heading:",
+        "answers": [
+           {
+              "id": 1,
+              "text": "h1",
+              "isCorrect": true
+           },
+           {
+              "id": 2,
+              "text": "h6",
+              "isCorrect": false
+           },
+           {
+              "id": 3,
+              "text": "head",
+              "isCorrect": false
+           }
+        ]
+     },
+     {
+        "id": 2,
+        "text": "What is the correct HTML element for inserting a line break?",
+        "answers": [
+           {
+              "id": 1,
+              "text": " br ",
+              "isCorrect": true
+           },
+           {
+              "id": 2,
+              "text": " break",
+              "isCorrect": false
+           },
+           {
+              "id": 3,
+              "text": " lb ",
+              "isCorrect": false
+           }
+        ]
+     },
+     {
+        "id": 3,
+        "text": "Height attribute specifies the height of which frame?",
+        "answers": [
+           {
+              "id": 1,
+              "text": "iframe",
+              "isCorrect": false
+           },
+           {
+              "id": 2,
+              "text": "jframe",
+              "isCorrect": false
+           },
+           {
+              "id": 3,
+              "text": "inline frame" ,
+              "isCorrect": true
+           }
+        ]
+     },
+     {
+        "id": 4,
+        "text": "Symbol used at the beginning of the HREF text is",
+        "answers": [
+           {
+              "id": 1,
+              "text": "*",
+              "isCorrect": false
+           },
+           {
+              "id": 2,
+              "text": "#",
+              "isCorrect": true
+           },
+           {
+              "id": 3,
+              "text": ".",
+              "isCorrect": false
+           }
+        ]
+     },
+     {
+        "id": 5,
+        "text": "How Can You Make A Bulleted List With Numbers?",
+        "answers": [
+           {
+              "id": 1,
+              "text": "dl",
+              "isCorrect": false
+           },
+           {
+              "id": 2,
+              "text": "ol",
+              "isCorrect": true
+           },
+           {
+              "id": 3,
+              "text": "list",
+              "isCorrect": false
+           }
+        ]
+     },
+     {
+        "id": 6,
+        "text": "Which element(s) represents a section of a document that links to other documents?",
+        "answers": [
+           {
+              "id": 1,
+              "text": "option",
+              "isCorrect": false
+           },
+           {
+              "id": 2,
+              "text": "nav",
+              "isCorrect": true
+           },
+           {
+              "id": 3,
+              "text": "navigation",
+              "isCorrect": false
+           }
+        ]
+     }
+    ]
+  
+
+  
+}
